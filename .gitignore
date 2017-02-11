@@ -1,1 +1,9 @@
-server/.idea/
+*.class
+.idea/*
+server/target/*
+server/build/*
+server/.idea/*
+server/.gradle/*
+server/gradle/*
+server/gradlew
+server/graglew.bat
