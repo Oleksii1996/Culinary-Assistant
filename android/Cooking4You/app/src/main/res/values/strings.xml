@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cooking4You</string>
+    <string name="CookingBook">Здесь хранятся ваши лучшие рецепты</string>
+    <string name="IHave">Добавьте в список содержимое вашего холодильника</string>
+</resources>
