@@ -5,50 +5,79 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textSize="14sp"
+        android:background="@android:drawable/ic_input_add"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="13dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignParentTop="true" />
+        android:src="@mipmap/freezer"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_marginTop="135dp" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:text="1.Открой холодильник"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/IHave"
-        android:textSize="15sp"
-        android:id="@+id/textView"
-        android:background="@color/colorPrimaryDark"
+        android:id="@+id/textView5"
+        android:textAllCaps="true"
         android:textColor="@android:color/background_light"
         android:layout_below="@+id/imageView1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="74dp" />
 
-    <Button
+    <TextView
+        android:text="2.Посмотри, что у тебя есть сьедобного"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:id="@+id/button"
-        android:textSize="14sp"
-        android:background="@android:drawable/ic_input_add"
+        android:id="@+id/textView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:text="3.Добавь в список продукты"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
         android:layout_below="@+id/textView"
-        android:layout_toRightOf="@+id/imageView1"
-        android:layout_toEndOf="@+id/imageView1"
-        android:layout_marginLeft="62dp"
-        android:layout_marginStart="62dp" />
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="18dp" />
 
     <Button
-        android:text="Поиск рецепта"
+        android:text="4.Выбери подходящий рецепт"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="43dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginBottom="15dp"
         android:id="@+id/button2"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/imageView1"
-        android:layout_toEndOf="@+id/imageView1" />
+        android:background="@android:color/background_light"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:elevation="19dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
 
 </RelativeLayout>
