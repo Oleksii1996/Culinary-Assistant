@@ -47,6 +47,17 @@ public class IngredientController {
         return new ResponseEntity(ingRepository.save(ingredient),HttpStatus.OK);
     }
 
+    @RequestMapping(value = "/{ingId}", method = RequestMethod.GET)
+    public ResponseEntity<String> getIng(@PathVariable("ingId") String id)  {
+        return new ResponseEntity(ingRepository.findOne(id),HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/{ingId}/del", method = RequestMethod.DELETE)
+    public ResponseEntity<String> delIng(@PathVariable("ingId") String id)  {
+        ingRepository.delete(id);
+        return new ResponseEntity("{\""+id+"\":\"deleted\"}", HttpStatus.OK);
+    }
+
 
     protected ResponseEntity<String> newJsonResponse(final Object object) {
         return new ResponseEntity<>(valueOf(object), HttpStatus.OK);

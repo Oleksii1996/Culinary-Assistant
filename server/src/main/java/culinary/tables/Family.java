@@ -16,6 +16,24 @@ public class Family {
     @JsonProperty("name")
     private String familyName;
 
+    @JsonProperty("text")
+    private String familyText;
+
+    public Family(String name, String text) {
+        this.familyName = name;
+        this.familyText = text;
+    }
+
+    public Family() {}
+
+    public String getFamilyText() {
+        return familyText;
+    }
+
+    public void setFamilyText(String familyText) {
+        this.familyText = familyText;
+    }
+
     public String getId() {
         return id;
     }
@@ -23,12 +41,6 @@ public class Family {
     public void setId(String id) {
         this.id = id;
     }
-
-    public Family(String name) {
-        this.familyName = name;
-    }
-
-    public Family() {}
 
     public String getFamilyName() {
         return familyName;

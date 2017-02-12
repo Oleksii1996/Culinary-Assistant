@@ -19,16 +19,13 @@ public class Recipe {
     private String id;
     private String recipeName;
     private String recipeText;
-
-    @DBRef
     private Family recipeFamily;
-
-    private ArrayList<String> recipeIngredients;
+    private ArrayList<RecipeIngredient> recipeIngredients;
     private ArrayList<String> recipeFotos;
 
 
     public Recipe(String name, String text, Family family,
-                      ArrayList<String> ingredients, ArrayList<String> fotos) {
+                      ArrayList<RecipeIngredient> ingredients, ArrayList<String> fotos) {
         this.recipeName = name;
         this.recipeText = text;
         this.recipeFamily = family;
@@ -62,11 +59,11 @@ public class Recipe {
         this.recipeFamily = recipeFamily;
     }
 
-    public ArrayList<String> getRecipeIngredients() {
+    public ArrayList<RecipeIngredient> getRecipeIngredients() {
         return recipeIngredients;
     }
 
-    public void setRecipeFamily(ArrayList<String> recipeIngredients) {
+    public void setRecipeFamily(ArrayList<RecipeIngredient> recipeIngredients) {
         this.recipeIngredients = recipeIngredients;
     }
 
