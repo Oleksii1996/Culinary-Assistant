@@ -7,3 +7,7 @@ server/.gradle/*
 server/gradle/*
 server/gradlew
 server/graglew.bat
+web_client/etc/*
+web_client/node_modules/*
+android/.idea/*
+android/gen/
