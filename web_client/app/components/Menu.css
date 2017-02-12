@@ -1,0 +1,10 @@
+.Menu {
+	width: 15%;
+	margin: 2%;
+}
+
+.Menu button {
+	margin: 2%;
+	width: 100%;
+	display: inline;
+}

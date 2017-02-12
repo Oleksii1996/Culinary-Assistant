@@ -1,0 +1,26 @@
+.container {
+	float: right;
+	width: 79%;
+	margin: 2%;
+	margin-top: 0;
+	/*border: 1px solid black;*/
+}
+
+.container button {
+	width: 40%;
+	margin: 1%;
+	display: block;
+}
+
+.container textarea {
+	width: 90%;
+	display: block;
+	outline: none;
+	resize: none;
+	margin: 1%;
+	padding: 1%;
+}
+
+.container h1, p {
+	text-align: center;
+}
