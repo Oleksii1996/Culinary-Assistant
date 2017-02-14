@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class RetrofitFactory {
-    public static final String BASE_ADDRESS = "https://damp-savannah-97284.herokuapp.com/";
+    public static final String BASE_ADDRESS = "https://lit-reaches-17435.herokuapp.com/";
 
     public static IngridientOps getIngridientOps(){
         Retrofit.Builder retrofiBuilder = new Retrofit.Builder();

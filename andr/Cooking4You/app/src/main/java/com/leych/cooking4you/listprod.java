@@ -80,7 +80,7 @@ public class listprod extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<List<Ingridient>> call, Throwable t) {
-
+                Log.e("ERROR", Log.getStackTraceString(t));
             }
         });
     }
